@@ -54,7 +54,7 @@
             </div>
           </div>
           <div
-            class="w-2/4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-400 flex justify-center gap-14 items-center py-0"
+            id="discoverNew" class="w-2/4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-400 flex justify-center gap-14 items-center py-0"
           >
             <img src="./assets/board.png" alt="" />
             <p class="text-white text-md">
@@ -204,11 +204,9 @@
       </div>
     </main>
 
-    <script>
-      const date = new Date().toDateString().split(" ");
-      document.getElementById("date").innerHTML = `${date[0]}<br> <span class="font-semibold">${date[1]} ${date[2]} ${date[3]}</span>`; 
-    </script>
 
+discoverNew
+    <script src="./script/date.js"></script>
     <script src="./script/clr_history.js"></script>
     <script src="./script/color.js"></script>
     <script src="./script/task.js"></script>
