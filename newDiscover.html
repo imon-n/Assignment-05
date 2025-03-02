@@ -11,7 +11,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
+  <body class="bg-[rgb(244,247,255)]">
     <header class="md:container mx-auto pt-1">
       <nav class="mt-10">
         <div class="navbar bg-base-100 shadow-sm rounded-lg">
@@ -26,13 +26,47 @@
             </div>
           </div>
           <div class="flex gap-5">
-            
-            <div>
-              <img onclick="genColor()" id="color-btn" src="./assets/theme-btn.png" alt="" />
-            </div>
+            <button id="back-btn" class="btn bg-violet-700 text-white rounded-lg mr-3">Back to Desk</button>
           </div>
         </div>
       </nav>
     </header>
+
+    <p class="text-center text-5xl font-bold my-10">Blog</p>
+
+    <main class="container mx-auto space-y-4">
+      <div class="text-xl bg-slate-50 p-5 rounded-3xl mt-4">
+        <h2 class="text-2xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h2>
+        <hr class=" my-2">
+        <p>There are five common way to select an element in the DOM. Such as Using getElementById, Using getElementsByClassName, Using getElementsByTagName, Using querySelector and Using querySelectorAll </p>
+      </div>
+      <div class="text-xl bg-slate-50 p-5 rounded-3xl mt-4">
+        <h2 class="text-2xl font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
+        <hr class=" my-2">
+        <p>The difference is innerHtml return all text including html tags, innertext return only all text and textContent is all text contained by an element and all its children.</p>
+      </div>
+      <div class="text-xl bg-slate-50 p-5 rounded-3xl mt-4">
+        <h2 class="text-2xl font-semibold">Question-3: What is event delegation in the DOM?</h2>
+        <hr class=" my-2">
+        <p>Event delegation is a design pattern/system of javascipt. its used to manage and handle events on multiple child elements.</p>
+      </div>
+      <div class="text-xl bg-slate-50 p-5 rounded-3xl mt-4">
+        <h2 class="text-2xl font-semibold">Question-4: What is event bubbling in the DOM?</h2>
+        <hr class=" my-2">
+        <p>Event bubbling is a pattern where an event triggered on a element propagations. it also allows parent element to respond to event triggered by their child elements.</p>
+      </div>
+      <div class="text-xl bg-slate-50 p-5 rounded-3xl mt-4">
+        <h2 class="text-2xl font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+        <hr class=" my-2">
+        <p>For creating new attribute use createElement("").Example: let p = document.createElement("p"); For adding, use appendChild(). Example: document.body.appnedChild(p) For Removing element, use removeChild(""); example let p =document.getElementById("d"); child =document.getElementById("dm");  p.removeChild(child);  </p>
+      </div>
+      
+    </main>
+
+    <script>
+      document.getElementById("back-btn").addEventListener("click",function(){
+        window.location.href = "./index.html"
+      })
+    </script>
   </body>
 </html>
